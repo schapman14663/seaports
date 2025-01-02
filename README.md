@@ -19,4 +19,23 @@ seaports
   |-chase [flag]
   |-edit [flag]
   |-verbose [flag]
+
 ```
+
+### Aliases
+I am trying to include aliases for some flags that make sense but feel free to let me know if you feel any should be added.
+
+Known Aliases:
+
+\[Chase Flag\]
+- "cd"
+- "zox" (yes for zoxide, I know that zoxide should actually probably be a 'z' but I haven't decided on if I'll include 'z' for Zig or not in the Language Argument)
+
+\[Edit Flag\]
+- "nano"
+- "vim"
+- "nvim"
+- "code"
+- "vscode"
+
+When I actually get to implementing the Edit Flag properly the idea is probably to look at using an environment variable (possibly something like $SEAPORT_EDITOR) to automatically launch the users preferred editor.
