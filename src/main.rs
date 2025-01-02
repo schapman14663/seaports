@@ -27,9 +27,24 @@ fn main(){
                 .help("open text editor for project when done")
                 .action(ArgAction::SetTrue)
                 )
+            //argument to indicate the user does not want to initialise git in the new directory
+            .arg(
+                Arg::new("nogit")
+                .long("nogit")
+                .aliases(["ng"])
+                .help("do not run git init")
+                .action(ArgAction::SetTrue)
+                )
+            //argument to indicate the user does not want to intialise Docker in the new directory
+            .arg(
+                Arg::new("nodocker")
+                .long("nodocker")
+                .aliases(["nd"])
+                .help("do not create a Docker file")
+                .action(ArgAction::SetTrue)
+                )
             //argument that indicates the user wants the terminal to print the creation of each
             //file for the project
-
             .arg(
                 Arg::new("verbose")
                 .short('v')
