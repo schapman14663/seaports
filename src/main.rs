@@ -24,8 +24,8 @@ fn main(){
                 Arg::new("chase")
                 .long("chase")
                 .aliases(["cd", "zox"])
-                .action(ArgAction::SetTrue)
                 .help("change into the project diretory when done")
+                .action(ArgAction::SetTrue)
                 )
             //argument that indicates the user wants to immediately open the project in their text
             //editor [USE ENVIRONMENT VARIABLE FOR EDITOR] (chases into the directory by default)
@@ -34,6 +34,7 @@ fn main(){
                 .long("edit")
                 .aliases(["nano", "vim", "nvim", "code"])
                 .help("open text editor for project when done")
+                .action(ArgAction::SetTrue)
                 ),
         )
         .get_matches();

@@ -10,3 +10,13 @@ There is also partially the aspect that Rust was the original inspiration for th
 
 ## Current Intended Structure
 Again, if you're seeing this it's probably still early days for this CLI. But the intention is that running a command like ``seaports new`` would create a new directory, with a reasonable set of initial files such as ``.gitignore``, ``src/``, initialise git and set up an initial docker file.
+
+### Current Framework Mapping
+```
+seaports
+|-new
+  |-*project name* \[required\]
+  |-chase \[flag\]
+  |-edit \[flag\]
+  |-verbose \[flag\]
+```
