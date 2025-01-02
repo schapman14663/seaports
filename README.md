@@ -38,4 +38,16 @@ Known Aliases:
 - "code"
 - "vscode"
 
-When I actually get to implementing the Edit Flag properly the idea is probably to look at using an environment variable (possibly something like $SEAPORT_EDITOR) to automatically launch the users preferred editor.
+When I actually get to implementing the Edit Flag properly the idea is probably to look at using an environment variable (possibly something like $SEAPORTS_EDITOR) to automatically launch the users preferred editor.
+
+\[No Git\]
+- "ng"
+
+I am planning to look into support for other Version Controls (again, possibly through use of some kind of environment variable i.e. $SEAPORTS_VC)
+
+\[No Docker\]
+- "nd"
+
+Same with Containers, support for other Containerization methods to come later once I've got initial set up in place (And again, likely through an environment variable i.e. $SEAPORTS_CONTAINERS)
+
+
