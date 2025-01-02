@@ -15,8 +15,8 @@ Again, if you're seeing this it's probably still early days for this CLI. But th
 ```
 seaports
 |-new
-  |-*project name* \[required\]
-  |-chase \[flag\]
-  |-edit \[flag\]
-  |-verbose \[flag\]
+  |-*project name* [required]
+  |-chase [flag]
+  |-edit [flag]
+  |-verbose [flag]
 ```
