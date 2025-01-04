@@ -1,4 +1,7 @@
 use std::path::PathBuf;
+use std::process::Command as term;
+use std::env;
+use std::fs;
 use clap::{arg, Arg, ArgAction, Command};
 
 fn main(){
@@ -56,5 +59,17 @@ fn main(){
         .get_matches();
 
     println!("Hello World, seaports command is functional");
-    
+
+    let list_dir = term::new("ls")
+        .arg("-a")
+        .spawn()
+        .expect("ls failed to execute");
+    println!();
+
+    let test_dir = "test_dir";
+
+    let source = term::new("mkdir")
+        .arg(test_dir)
+        .spawn()
+        .expect("that didn't work");
 }
