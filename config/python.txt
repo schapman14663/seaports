@@ -1,0 +1,8 @@
+src/
+docs/
+tests/
+config/
+build/
+git
+gitginore
+docker
