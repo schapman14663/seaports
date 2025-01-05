@@ -51,3 +51,7 @@ I am planning to look into support for other Version Controls (again, possibly t
 Same with Containers, support for other Containerization methods to come later once I've got initial set up in place (And again, likely through an environment variable i.e. $SEAPORTS_CONTAINERS)
 
 
+#### Shell Aliases
+If I can get it working I'd love to just have the CLI read the users shell initialiser (``.zshrc``, ``.bashrc`` etc...), however, this is becoming too much of a sticking point at the moment, and potentially could get quite messy given that different users will have different amounts of Aliases for a number of different things, some of which won't be useful.
+
+As such, it is a strong consideration that I might instead have an ``aliases.txt`` for the CLI to read from (which would allow users to just list what they'd actually want, at the loss of it being automatic). 
